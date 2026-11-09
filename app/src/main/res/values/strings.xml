@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Porra_dam</string>
+    <string name="puntos">%1$d pts</string>
+    <string name="tu_porra">Tu porra: %1$d - %2$d</string>
+    <string name="sin_pronostico">No hiciste pronóstico</string>
 </resources>
