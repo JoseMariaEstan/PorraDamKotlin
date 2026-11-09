@@ -40,7 +40,7 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.elcampico.porra_dam.ui.componentes.FondoPantalla
+import org.elcampico.porra_dam.ui.componentes.ConFondo
 import org.elcampico.porra_dam.ui.theme.Porra_damTheme
 
 @Composable
@@ -62,7 +62,6 @@ fun PantallaSala(
     var alias by rememberSaveable { mutableStateOf("") }
     var sala by rememberSaveable { mutableStateOf("") }
     Box(modifier = modifier.fillMaxSize()) {
-        FondoPantalla()
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -166,6 +165,6 @@ fun PantallaSala(
 @Composable
 private fun PantallaSalaPreview() {
     Porra_damTheme {
-        PantallaSala(onEntrar = { _, _ -> })
+        ConFondo { PantallaSala(onEntrar = { _, _ -> }) }
     }
 }
